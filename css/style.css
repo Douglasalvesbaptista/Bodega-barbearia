@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ccc;
+    
 }
 
 #principal{
@@ -36,14 +37,13 @@ li{
     background: #0d1216;
     margin: 15px 10px 0 0;
     padding: 6px 8px 6px 8px; 
-    border-style: solid;
     text-transform: uppercase;
   }
 ul a{
     text-decoration: none;
     color:white;
 }  
-  li:nth-child(4){
+  li#agendamento{
       padding: 12px;
       border-radius: 0.5em;
       margin: 25px 15px 0 0;
@@ -51,15 +51,27 @@ ul a{
       text-decoration-color:black;
       border-style: none;
   }
-.content-section{
-    width: 50%;
-    margin-left: 20px;
+img{
+    max-width: 100%;
+    
 }
-article:nth-child(1){
-    margin-top: 50px ;
+
+.avatar{
+    display: inline-block;
+    padding: 5% 5%;
+    border: solid 1px;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 50%;
+    }
+section#jony{
+    
 }
-article:nth-child(2){
-    margin-top: 75px ;
+section#hell{
+    
+}
+section#chacal{
+   
 }
 
 footer{
