@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ccc;
-    
+  
 }
 
 #principal{
@@ -16,21 +16,25 @@ body{
     visibility: initial;
     
 }
+
 header{
     height: 100px;
     background: #0d1216;
     position: relative;
 }
+
 header nav{
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
 }
+
 ul{
     margin: 0;
     padding: 0;
 }
+
 li{
     list-style: none;
     display: inline-block;
@@ -38,40 +42,34 @@ li{
     margin: 15px 10px 0 0;
     padding: 6px 8px 6px 8px; 
     text-transform: uppercase;
-  }
+}
+
 ul a{
     text-decoration: none;
     color:white;
 }  
-  li#agendamento{
-      padding: 12px;
-      border-radius: 0.5em;
-      margin: 25px 15px 0 0;
-      background-color: rgba(0, 255, 0, 0.904);
-      text-decoration-color:black;
-      border-style: none;
-  }
-img{
-    max-width: 100%;
-    
+
+li#agendamento{
+    padding: 12px;
+    border-radius: 0.5em;
+    margin: 25px 15px 0 0;
+    background-color: rgba(0, 255, 0, 0.904);
+    text-decoration-color:black;
+    border-style: none;
+}
+
+img.avatar{
+    width: 100%;
+    height: auto;
 }
 
 .avatar{
     display: inline-block;
-    padding: 5% 5%;
     border: solid 1px;
-    margin-left: 10%;
-    margin-top: 7%;
+    margin-left: 18%;
+    margin-top: 12%;
     border-radius: 50%;
-    }
-section#jony{
-    
-}
-section#hell{
-    
-}
-section#chacal{
-   
+    overflow: hidden;
 }
 
 footer{
@@ -80,6 +78,7 @@ footer{
     background-color: rgba(6, 7, 6, 0.61);
     bottom: 0px;
 }
+
 footer p{
     color: aliceblue;
     padding-left: 42%;
