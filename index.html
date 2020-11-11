@@ -16,10 +16,10 @@
             <a href="index.html"><img class="logotipo" src="image/logominiatura.png" alt="Barbearia tradicional bodega"></a>
             <nav>
                 <ul>
-                    <li><a clas="menu"href="index.html">Home</a></li>
-                    <li><a clas="menu"href="#">Sobre</a></li>
-                    <li><a clas="menu"href="#">Serviços</a></li>
-                    <li id="agendamento"><a href="#">agendamento online</a></li>
+                    <li><a class="menu" href="index.html">Home</a></li>
+                    <li><a class="menu"href="#">Sobre</a></li>
+                    <li><a class="menu"href="#">Serviços</a></li>
+                    <div id="agendamento" onclick="clicar()" onmouseout="sair()"><a href="#">agendamento online</a></div>
                 </ul>
             </nav>
         </header>
@@ -37,6 +37,16 @@
     </div>
     <footer class="footer"><p>Copyright &copy; Bodega</p></footer>
         
-    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        
+    function clicar(){
+       var a = window.document.getElementById('agendamento')
+       a.style.background = 'blue'
+    }
+    function sair(){
+       var a = window.document.getElementById('agendamento')
+       a.style.background = 'rgba(0, 255, 0, 0.904)'
+    }
+    </script>
 </body>
 </html>

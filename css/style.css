@@ -49,13 +49,15 @@ ul a{
     color:white;
 }  
 
-li#agendamento{
+div#agendamento{
     padding: 12px;
     border-radius: 0.5em;
     margin: 25px 15px 0 0;
-    background-color: rgba(0, 255, 0, 0.904);
+    background: rgba(0, 255, 0, 0.904);
     text-decoration-color:black;
     border-style: none;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 img.avatar{
