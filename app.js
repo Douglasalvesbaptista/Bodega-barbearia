@@ -1,9 +1,16 @@
 const http = require('http')
 const fs = require('fs')
+const express = require('express')
+const app = express()
+const port = 3000
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream('index.html').pipe(res)
-})
+app.use(express.static('public'));
 
-server.listen(process.env.PORT || 3000)
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  })
+  
