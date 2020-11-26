@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #ccc;
     width: 100%;
+    position: relative;
 }
 
 .logotipo{
@@ -118,6 +119,20 @@ h1{
 p#home-p{
     color: white;
     font-size: 18pt;
+}
+
+div#extern-maps{
+    background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.49.48.jpeg);
+    width: 100%;
+    background-size: cover;
+    display: block;
+    position: relative;
+         
+}
+div#maps{
+    text-align: center;
+    display: block;
+    position: relative;
 }
 
 footer{
