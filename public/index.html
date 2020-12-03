@@ -2,55 +2,73 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Douglas Alves">
     <meta name="description" content="Barbearia Tradicional Bodega">
     <meta name="keywords" content="Barbearia">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+   
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Bodega</title>
 </head>
 <body>
+
     
+  
         <header>
-            <a href="index.html"><img class="logotipo" src="image/bodega _final.png " alt="Barbearia tradicional bodega"></a>
+          <input type="checkbox" id="chec" />
+          
+          <label for="chec">
+            <i class="fas  fa-bars fa-3x" style="color:white"></i>
+          </label>
             <nav>
-                <ul>
-                    <li><a class="menu" href="index.html">Home</a></li>
-                    <li><a class="menu"href="sobre.html">Sobre</a></li>
-                    <li><a class="menu"href="#">Serviços</a></li>
-                    <div id="agendamento" onclick="clicar()" onmouseout="sair()"><a href="https://api.whatsapp.com/send?phone=5519992798363" target="_blank" id="agendamento-a">agendamento online</a></div>
-                </ul>
+              <ul>
+                <li><a class="link" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="link" href="#">sobre</a>
+                </li>
+                <li>
+                  <a class="link" href="#">serviços</a>
+                </li>
+                
+              </ul>
+            
             </nav>
-        </header>
+            <img id="logotipo" src="image/bodega%20_final.png">
+        </header>   
+   
     <div id="img-home">
-            <section id="section-home">
+        <section id="section-home">
                 <article>
                     <h1>bodega tradicional barbearia</h1>
                     <p id="home-p">Venha viver uma experiência diferenciada, atendimento sem frescura com os melhores cortes da região, porém com piores barbeiros da cidade</p>
                 </article>
             </section>
     </div>
-    <div id="content-home">
-
+    <div class="content-home">
+        <div id="agendamento"><a href="#" style="color=white"><p>agende seu horario</p></a></div>
     </div>
-    <div id="extern-maps">
+    <div id="extern-maps" >
         <div id="maps">
             <div id="atendimento">
                 <h2> HORÁRIO DE ATENDIMENTO</h2>
                  <p>Terça à Sexta: 10h às 20h</p>
                  <p>Sábado: 9h as 17h</p>
              </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14718.829476903935!2d-47.3177408!3d-22.7391156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x185f13a767140744!2sBodega%20Tradicional%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1606352550162!5m2!1spt-BR!2sbr" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7073696271136!2d-47.319929485037456!3d-22.73911558509731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89a24ea055cd9%3A0x185f13a767140744!2sBodega%20Tradicional%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1606936209736!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     <p>R. Pernambuco, 824 - Vila Nossa Sra. de Fatima, Americana - SP, 13478-570</p>
                     <p>Contato: (19) 3461-3318</p>
         </div>
         
     </div>
-    
+   
     
     <footer class="footer"><p>Copyright &copy; Bodega</p></footer>
-     <script src="script.js"></script>   
+    
+    
 </body>
 </html>

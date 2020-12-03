@@ -1,185 +1,373 @@
-body{
+html, body{
     font-family: tahoma, arial, sans-serif;
-    padding: 0;
     background-color: #ccc;
     width: 100%;
-    position: relative;
-}
-
-.logotipo{
-    margin: 10px 0 0 100px;
-    visibility: initial;
-}
-
-header{
-    height: 120px;
-    background: #0d1216;
-    position: relative;
+    margin:0px;
+    padding: 0px;
     display: block;
+        
 }
-
-header nav{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    list-style: none;
-    display: inline-block;
-    background: #0d1216;
-    margin: 45px 10px 0 0;
-    padding: 6px 8px 6px 8px; 
-    text-transform: uppercase;
-}
-a{
-    text-decoration: none;
-    color:white;
-    
-    
-}
-a.menu{
-    text-decoration: none;
-    color:white;
-    font-size: 12pt;
-    letter-spacing: 3px;
-    transition: color .3s linear;
-    font-weight: bold;
-}  
- a:hover{
-    color:rgba(87, 87, 87, 0.561);
-}
-
-div#agendamento{
-    padding: 12px;
-    border-radius: 0.5em;
-    margin: 25px 15px 0 0;
-    background: rgba(0, 255, 0, 0.904);
-    text-decoration-color:black;
-    border-style: none;
-    display: inline-block;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 14pt;
-}
-
-section{
-    width: 50%;
-    background: green;
-    text-align: center;
-    border: 3px solid transparent ;
-    border-radius: 5px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display:block;      
-}
-
-section#section-home{
-    text-align: left;
-    background: rgba(5, 5, 5, 0.74);  
-    display:block;
-    position: relative;
-}
-
-div#img-home{
-    width: 100%;
-    background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.50.25.jpeg);
-    background-size: cover;
-    display: block;
-    padding: 15px;
-}
-
-div#content-home{
-    background: #0d1216;
-    width: 100%;
-    height: 60px;
-    position: relative;
-    display: block;
-}
-
-article {
-    display: block;
-    padding: 30px;
-    text-align: left;
-    width: 50%;
-       
-}
-
 h1{
-    color: white;
-    font-weight: bold;
     text-transform: uppercase;
+    
 }
 h2{
-    margin: 0;
-    color: rgba(5, 5, 5, 0.74); 
     font-size: 18pt;
     font-weight: bold;
 
 }
+header{
+    position: static;
+    width: 100%;
+    height: 150px;
+    background-color: #0d1216;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    
+}
+.link:hover{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(204, 202, 202);
+} 
+i{
+    width: 40px;
+}
+ul{
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9)
+    
+  }
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(300px);
+  }
+nav{
+    top:0;
+    right:0;
+    background-color: rgba(51, 50, 50, 0.6);
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    position: absolute;
+    transition: ease .5s;
+    z-index: 2;    
+}  
+label{
+    padding: 50px;
+    position: absolute;
+    z-index: 3;
+  }
+#logotipo{
+    top:0;
+    right: 0;
+    padding: 25px;
+    position: absolute;
+}
+div#img-home{
+    width: 100%;
+    background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.50.25.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding:30px 0 30px 0px;
+        
+}
+section{
+    width: 65%;
+    text-align: left;
+    border: 3px solid transparent ;
+    border-radius: 5px;
+    background: rgba(5, 5, 5, 0.44); 
+    margin-left: 10px;
+    
+    
+}
+article {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+        
+}
 p#home-p{
     color: white;
-    font-size: 22pt;
+    font-size: 14pt;
     font-weight: bold;
+    text-align: left;
 }
-
+.content-home{
+    background: #0d1216;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    
+    
+    
+      
+}
+#agendamento{
+    padding: 10px;
+    width: 200px;
+    background-color: rgba(0, 255, 0, 0.904);
+    border-radius: 8px;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    
+}
+#agendamento a{
+   color: white;
+   text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
 div#extern-maps{
     background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.49.48.jpeg);
     width: 100%;
+    height: 100%;
     background-size: cover;
-    display: block;
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
     
-    
-         
+        
 }
 div#maps{
     text-align: center;
-    display: block;
-    position: relative;
     padding: 50px;
     
+    
 
+}
+div#atendimento{
+    width: 60%;
+    background-color: rgba(0,0,0 , 0.5);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 div#maps p{
     font-weight: bold;
     
 }
-
-div#atendimento{
-    position: relative;
-    display: block;
-    
-}
 div#atendimento p {
     margin: auto;
-    width: 30%;
-    color: rgba(5, 5, 5, 0.74); 
-    font-size: 18pt;
+    color: white; 
+    width: 100px;
+    font-size: 10pt;
     font-weight: bold;
+    
 }
-
+div#atendimento h2 {
+    color:white;
+}
 iframe{
-    margin-top: 50px;
-    position: relative;
+    margin: auto;
+    margin-top: 68%;
+    width: 100%;
+    height: 100%;
         
 }
-
-
 footer{
     position: fixed;
     width: 100%;
     background-color: rgba(6, 7, 6, 0.61);
     bottom: 0px;
 }
-
 footer p{
     color: aliceblue;
     text-align: center;
 }
+@media screen and (min-width: 48.75em){
+
+            header{
+                height: 120px;               
+            }
+            .link{
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                padding: 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 12pt;
+                font-weight: bold;
+                
+                
+            }
+            .link:hover{
+                text-decoration: none;
+                transition: 200ms;
+                color:rgba(51, 51, 51, 0.918);
+                background-color: #0d1216;
+                
+            } 
+            i{
+                visibility: hidden;
+            }
+            i:disabled{
+                display: none;
+            }
+            ul{
+                margin-left: 50px;
+                top: 0px;
+                background-color: #0d1216;
+                
+              }
+              li{
+                  display: inline-block;
+                  
+              }         
+       
+            nav{
+                margin-top: 35px;              
+                background-color: rgba(51, 50, 50, 0);
+                width: 50%;
+                left: 0px;                              
+                z-index: 5;  
+                height: 20%;  
+            }  
+     
+            #logotipo{
+                top:0;
+                right: 0;
+                padding: 15px;
+            }                            
+            div#img-home{
+                width: 100%;
+                background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.50.25.jpeg);
+                background-size: cover;
+                background-position: unset;
+                height: 100%;
+                padding:30px 0 30px 0px;
+                    
+            }
+            section{
+                width: 50%;
+                height: 300px;
+                text-align: center;
+                border: 3px solid transparent ;
+                border-radius: 5px;
+                margin: 40px 0 40px 40px;
+                display:block;      
+            }
+            article {
+
+                padding: 15spx;
+                text-align: left;
+                width: 50%;
+                color: white;
+                font-weight: bold;
+                    
+            }
+            p#home-p{
+                color: white;
+                font-size: 14pt;
+                font-weight: bold;
+                text-align: left;
+            }
+            .content-home{
+                background: #0d1216;
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                
+            }
+            #agendamento{
+                padding: 10px;
+                width: 200px;
+                background-color: rgba(0, 255, 0, 0.904);
+                border-radius: 8px;
+                text-align: center;
+                top:-507px;
+                left:450px;
+                transform: translate(-50% , -50%);
+                position: absolute;
+                z-index: 7;
+                
+            }
+            #agendamento a{
+               color: white;
+               text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+              
+            }
+            div#extern-maps{
+                background-image: url(../image/WhatsApp\ Image\ 2020-11-24\ at\ 11.49.48.jpeg);
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+                    
+            }
+            div#maps{
+                text-align: center;
+                padding: 70px;
+                
+                
+            
+            }
+            div#atendimento{
+                width: 70%;
+                background-color: rgba(0,0,0 , 0.5);
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 10px;
+            }
+           
+            div#atendimento p {
+                margin: auto;
+                color: white; 
+                width: auto;
+                font-size: 15pt;
+                font-weight: bold;
+                display: inline-block;
+                
+            }
+            div#atendimento h2 {
+                color:white;
+            }
+            iframe{
+                margin: auto;
+                margin-top: 90px;
+                width: 500px;
+                height: 500px;
+                    
+            }
+            footer{
+                position: fixed;
+                width: 100%;
+                background-color: rgba(6, 7, 6, 0.61);
+                
+                
+                margin: auto;
+            }
+            footer p{
+                color: aliceblue;
+                text-align: center;
+}
+
