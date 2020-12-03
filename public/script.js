@@ -11,3 +11,9 @@ function sair(){
     a.style.backgroundColor = 'rgba(0, 255, 0, 0.904)'
     
 }
+$('.carousel').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });

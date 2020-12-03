@@ -37,18 +37,35 @@
         <div id="img-home">
             <section id="section-home">
                     <article>
-                        <h1>sobre</h1>
-                        <p id="home-p">O estabelecimento oferecere recração e um Belos corte de cabelo</p>
+                        <script type="text/javascript">
+                            function slide1(){
+                            document.getElementById('id').src="image/1.jpeg";
+                            setTimeout("slide2()", 3000)
+                            }
+                            
+                            function slide2(){
+                            document.getElementById('id').src="image/2.jpeg";
+                            setTimeout("slide3()", 3000)
+                            }
+                            
+                            function slide3(){
+                            document.getElementById('id').src="image/3.jpeg";
+                            setTimeout("slide1()", 3000)
+                            }
+                            </script>
+                            <body onLoad="slide1()">
+                            <img id="id">
                     </article>
                 </section>
         </div>
         <div class="content-home">
-            <div id="agendamento" ><a href="https://api.whatsapp.com/send?phone=5519992798363&text=Ol%C3%A1%2C+tudo+bem+*Jony*%3F+Gostaria+de+marcar+um+horario!" target="_blank"><p>agende seu horario</p></a></div>
+            <div id="agendamento" ><a href="https://ulink.bio/bodega.barbearia" target="_blank"><p>agende seu horario</p></a></div>
         </div>
+        
    
    
-    
+    <script src="script.js"></script>
     <footer class="footer"><p>Copyright &copy; Bodega</p></footer>
-     <script src="script.js"></script>   
+    <script src="script.js"></script>   
 </body>
 </html>
