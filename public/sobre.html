@@ -12,30 +12,41 @@
     <title>Bodega</title>
 </head>
 <body>
-    <div id="header-nav">
         <header>
-            <a href="index.html"><img class="logotipo" src="image/bodega _final.png " alt="Barbearia tradicional bodega"></a>
+          <input type="checkbox" id="chec" />
+          
+          <label for="chec">
+            <i class="fas  fa-bars fa-2x" style="color:white"></i>
+          </label>
             <nav>
-                <ul>
-                    <li><a class="menu" href="index.html">Home</a></li>
-                    <li><a class="menu"href="#">Sobre</a></li>
-                    <li><a class="menu"href="#">Serviços</a></li>
-                    <div id="agendamento" onclick="clicar()" onmouseout="sair()"><a href="https://api.whatsapp.com/send?phone=5519992798363" target="_blank" id="agendamento-a">agendamento online</a></div>
-                </ul>
+              <ul>
+                <li><a class="link" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="link" href="sobre.html">sobre</a>
+                </li>
+                <li>
+                  <a class="link" href="#">serviços</a>
+                </li>
+                
+              </ul>
+            
             </nav>
+            <img id="logotipo" src="image/bodega%20_final.png">
         </header>
-    </div> 
-    <div id="img-home">
+        <div id="img-home">
             <section id="section-home">
-                <article>
-                    <h1>sobre</h1>
-                    <p id="home-p">O estabelecimento oferecere recração e um Belos corte de cabelo</p>
-                </article>
-            </section>
-    </div>
-    <div id="content-home">
-
-    </div>
+                    <article>
+                        <h1>sobre</h1>
+                        <p id="home-p">O estabelecimento oferecere recração e um Belos corte de cabelo</p>
+                    </article>
+                </section>
+        </div>
+        <div class="content-home">
+            <div id="agendamento" ><a href="https://api.whatsapp.com/send?phone=5519992798363&text=Ol%C3%A1%2C+tudo+bem+*Jony*%3F+Gostaria+de+marcar+um+horario!" target="_blank"><p>agende seu horario</p></a></div>
+        </div>
+   
+   
     
     <footer class="footer"><p>Copyright &copy; Bodega</p></footer>
      <script src="script.js"></script>   
