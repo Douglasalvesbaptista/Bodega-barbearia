@@ -1,8 +1,13 @@
+var a = window.document.getElementById('agendamento')
+
+a.addEventListener('click', clicar)
+a.addEventListener('mouseout', sair)
+
 function clicar(){
-    var a = window.document.getElementById('agendamento')
-    a.style.background = 'blue'
+    a.style.backgroundColor = 'blue'    
 }
+
 function sair(){
-    var a = window.document.getElementById('agendamento')
-    a.style.background = 'rgba(0, 255, 0, 0.904)'
+    a.style.backgroundColor = 'rgba(0, 255, 0, 0.904)'
+    a.innerHTML = 'seu cu'
 }
