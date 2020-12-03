@@ -9,5 +9,5 @@ function clicar(){
 
 function sair(){
     a.style.backgroundColor = 'rgba(0, 255, 0, 0.904)'
-    a.innerHTML = 'seu cu'
+    
 }
